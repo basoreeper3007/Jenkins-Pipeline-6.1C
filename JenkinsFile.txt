@@ -87,5 +87,11 @@ pipeline {
                 echo "Deploying the application to $PRODUCTION_ENVIRONMENT using Ansible"
             }
         }
+
+        stage('Completed') {
+            steps {
+                echo "Completed"
+            }
+        }
     }
 }
